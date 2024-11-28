@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos - Balneário Camboriú</title>
+    <style>
+        /* Reset de margens e paddings */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #005f73;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            font-size: 16px;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        nav ul li a.active,
+        nav ul li a:hover {
+            background-color: #023e4a;
+            border-radius: 5px;
+        }
+
+        header .banner {
+            width: 100%;
+            height: 300px;
+            background: url('banner.jpg') center/cover no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        header .banner h1 {
+            font-size: 48px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        section h2 {
+            color: #005f73;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .event-category {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Sempre 3 colunas */
+            gap: 20px;
+        }
+
+        /* Ajuste responsivo: 2 colunas em telas médias, 1 coluna em telas pequenas */
+        @media (max-width: 768px) {
+            .event-category {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .event-category {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .event-category a {
+            display: block;
+            padding: 15px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .event-category a:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Categorias com cores diferentes */
+        .festas { background-color: #e91e63; }
+        .arte-cinema { background-color: #3f51b5; }
+        .infantil { background-color: #ffd700; color: #333; }
+        .congresso { background-color: #9c27b0; }
+        .moda { background-color: #ff9800; }
+        .cursos { background-color: #00bcd4; }
+        .pride { background-color: #ff4081; }
+        .saude { background-color: #8bc34a; }
+        .geek { background-color: #9e9e9e; }
+        .esportes { background-color: #03a9f4; }
+        .religiao { background-color: #4caf50; }
+        .gastronomia { background-color: #ff5722; }
+
+        footer {
+            background-color: #005f73;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pontos-turisticos.html">Pontos Turísticos</a></li>
+                <li><a href="eventos.html" class="active">Eventos</a></li>
+                <li><a href="hoteis.html">Hotéis</a></li>
+                <li><a href="gastronomia.html">Gastronomia</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+        <section class="banner">
+            <h1>Eventos em Balneário Camboriú</h1>
+        </section>
+    </header>
+    <main>
+        <section>
+            <h2>Próximos Eventos</h2>
+            <p style="text-align: center;">Escolha uma categoria para explorar os melhores eventos em Balneário Camboriú:</p>
+            <br>
+            <div class="event-category">
+                <a href="https://www.sympla.com.br/eventos/balneario-camboriu-sc?cl=17-festas-e-shows&page=1" class="festas">Festas e Shows</a>
+                <a href="https://www.sympla.com.br/eventos/balneario-camboriu-sc?page=1&cl=10-arte-cinema-e-lazer" class="arte-cinema">Arte e Cinema</a>
+                <a href="https://www.sympla.com.br/eventos/balneario-camboriu-sc?page=1&cl=15-infantil" class="infantil">Infantil</a>
+                <a href="https://www.sympla.com.br/eventos/balneario-camboriu-sc?page=1&cl=4-congressos-e-palestras" class="congresso">Congressos</a>
+                <a href="https://www.sympla.com.br/eventos/balneario-camboriu-sc?page=1&cl=11-moda-e-beleza" class="moda">Moda e Beleza</a>
+                <a href="https://www.sympla.com.br/eventos/balneario-camboriu-sc?page=1&cl=8-curso-e-workshops" class="cursos">Cursos</a>
+                <a href="https://www.sympla.com.br/eventos/balneario-camboriu-sc?page=1&cl=14-pride" class="pride">Pride</a>
+                <a href="https://www.sympla.com.br/eventos/balneario-camboriu-sc?page=1&cl=9-saude-e-bem-estar" class="saude">Saúde e Bem-Estar</a>
+                <a href="https://www.sympla.com.br/eventos/balneario-camboriu-sc?page=1&cl=12-games-e-geek" class="geek">Games e Geek</a>
+                <a href="https://www.sympla.com.br/eventos/balneario-camboriu-sc?page=1&cl=2-esportes" class="esportes">Esportes</a>
+                <a href="https://www.sympla.com.br/eventos/balneario-camboriu-sc?page=1&cl=13-religiao-e-espiritualidade" class="religiao">Religião</a>
+                <a href="https://www.sympla.com.br/eventos/balneario-camboriu-sc?page=1&cl=1-gastronomia" class="gastronomia">Gastronomia</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Turismo Balneário Camboriú. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

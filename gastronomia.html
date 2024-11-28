@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gastronomia - Balneário Camboriú</title>
+    <style>
+        /* Reset de margens e paddings */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #005f73;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            font-size: 16px;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        nav ul li a.active,
+        nav ul li a:hover {
+            background-color: #023e4a;
+            border-radius: 5px;
+        }
+
+        header .banner {
+            width: 100%;
+            height: 300px;
+            background: url('banner.jpg') center/cover no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        header .banner h1 {
+            font-size: 48px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        section h2 {
+            color: #005f73;
+            margin-bottom: 15px;
+        }
+
+        section p {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .restaurant-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .restaurant-list li {
+            background: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .restaurant-list li:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .restaurant-list h3 {
+            margin: 0 0 10px 0;
+            color: #005f73;
+        }
+
+        .restaurant-list p {
+            margin: 0 0 10px 0;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .restaurant-list a {
+            text-decoration: none;
+            color: #e91e63;
+            font-weight: bold;
+        }
+
+        .restaurant-list a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #005f73;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pontos-turisticos.html">Pontos Turísticos</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="hoteis.html">Hotéis</a></li>
+                <li><a href="gastronomia.html" class="active">Gastronomia</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+        <section class="banner">
+            <h1>Gastronomia em Balneário Camboriú</h1>
+        </section>
+    </header>
+    <main>
+        <section>
+            <h2>Sabores de Balneário Camboriú</h2>
+            <p>Explore uma rica diversidade gastronômica para todos os gostos. Descubra os melhores restaurantes da cidade:</p>
+        </section>
+
+        <section>
+            <h2>Restaurantes Recomendados</h2>
+            <ul class="restaurant-list">
+                <li>
+                    <h3><a href="https://www.tripadvisor.com.br/Restaurant_Review-g680306-d10062276-Reviews-Brava_Sushi_Balneario_Camboriu-Balneario_Camboriu_State_of_Santa_Catarina.html" target="_blank">Brava Sushi</a></h3>
+                    <p>Especializado em sushi, com um ambiente moderno e acolhedor.</p>
+                </li>
+                <li>
+                    <h3><a href="https://www.tripadvisor.com.br/Restaurant_Review-g680306-d26861900-Reviews-Ox_Steak_Fish-Balneario_Camboriu_State_of_Santa_Catarina.html" target="_blank">Ox Steak & Fish</a></h3>
+                    <p>Churrascaria de alto padrão, oferecendo cortes premium e frutos do mar.</p>
+                </li>
+                <li>
+                    <h3><a href="https://www.tripadvisor.com.br/Restaurant_Review-g680306-d26883006-Reviews-Distretto_Brava-Balneario_Camboriu_State_of_Santa_Catarina.html" target="_blank">Distretto Brava</a></h3>
+                    <p>Espaço gourmet com diversas opções de alta qualidade.</p>
+                </li>
+                <li>
+                    <h3><a href="https://www.tripadvisor.com.br/Restaurant_Review-g680306-d9722747-Reviews-Restaurante_Segredos_Do_Sabor-Balneario_Camboriu_State_of_Santa_Catarina.html" target="_blank">Segredos do Sabor</a></h3>
+                    <p>Restaurante aconchegante com pratos da culinária brasileira.</p>
+                </li>
+                <li>
+                    <h3><a href="https://www.tripadvisor.com.br/Restaurant_Review-g680306-d25036252-Reviews-Pizza_Crush_Bc-Balneario_Camboriu_State_of_Santa_Catarina.html" target="_blank">Pizza Crush BC</a></h3>
+                    <p>Pizzaria com sabores irresistíveis e ambiente descontraído.</p>
+                </li>
+                <li>
+                    <h3><a href="https://www.tripadvisor.com.br/Restaurant_Review-g680306-d8691570-Reviews-Campano_Campo_Carne_Fogo-Balneario_Camboriu_State_of_Santa_Catarina.html" target="_blank">Campano Campo Carne & Fogo</a></h3>
+                    <p>Carne de qualidade excepcional preparada no fogo de chão.</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Turismo Balneário Camboriú. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

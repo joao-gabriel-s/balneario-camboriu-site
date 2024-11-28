@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotéis - Balneário Camboriú</title>
+    <style>
+        /* Reset de margens e paddings */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #005f73;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            font-size: 16px;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        nav ul li a.active,
+        nav ul li a:hover {
+            background-color: #023e4a;
+            border-radius: 5px;
+        }
+
+        header .banner {
+            width: 100%;
+            height: 300px;
+            background: url('banner.jpg') center/cover no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        header .banner h1 {
+            font-size: 48px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        section h2 {
+            color: #005f73;
+            margin-bottom: 15px;
+        }
+
+        section p {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .hotel-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .hotel-list li {
+            background: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .hotel-list li:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .hotel-list h3 {
+            margin: 0 0 10px 0;
+            color: #005f73;
+        }
+
+        .hotel-list p {
+            margin: 0 0 10px 0;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .hotel-list a {
+            text-decoration: none;
+            color: #e91e63;
+            font-weight: bold;
+        }
+
+        .hotel-list a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #005f73;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pontos-turisticos.html">Pontos Turísticos</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="hoteis.html" class="active">Hotéis</a></li>
+                <li><a href="gastronomia.html">Gastronomia</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+        <section class="banner">
+            <h1>Hotéis em Balneário Camboriú</h1>
+        </section>
+    </header>
+    <main>
+        <section>
+            <h2>Hotéis Recomendados</h2>
+            <p>Confira alguns dos melhores hotéis em Balneário Camboriú. Clique no nome para mais informações:</p>
+            <ul class="hotel-list">
+                <li>
+                    <h3><a href="https://www.tripadvisor.com.br/Hotel_Review-g680306-d1082984-Reviews-Marambaia_Hotel_Convencoes-Balneario_Camboriu_State_of_Santa_Catarina.html" target="_blank">Marambaia Hotel & Convenções</a></h3>
+                    <p>Hotel com vista deslumbrante para o mar, perfeito para negócios e lazer.</p>
+                </li>
+                <li>
+                    <h3><a href="https://www.tripadvisor.com.br/Hotel_Review-g680306-d1984119-Reviews-Hotel_Bella_Camboriu-Balneario_Camboriu_State_of_Santa_Catarina.html" target="_blank">Hotel Bella Camboriú</a></h3>
+                    <p>Localizado no centro da cidade, próximo a restaurantes e atrações turísticas.</p>
+                </li>
+                <li>
+                    <h3><a href="https://www.tripadvisor.com.br/Hotel_Review-g680306-d1830266-Reviews-Camboriu_Praia_Hotel-Balneario_Camboriu_State_of_Santa_Catarina.html" target="_blank">Camboriú Praia Hotel</a></h3>
+                    <p>Ambiente aconchegante, ideal para famílias em busca de conforto e diversão.</p>
+                </li>
+                <li>
+                    <h3><a href="https://www.tripadvisor.com.br/Hotel_Review-g680306-d1984123-Reviews-Hotel_Rosenbrock-Balneario_Camboriu_State_of_Santa_Catarina.html" target="_blank">Hotel Rosenbrock</a></h3>
+                    <p>Hotel tranquilo e confortável, localizado próximo à Praia Central.</p>
+                </li>
+                <li>
+                    <h3><a href="https://www.tripadvisor.com.br/Hotel_Review-g680306-d7377553-Reviews-Hotel_ibis_Styles_Balneario_Camboriu-Balneario_Camboriu_State_of_Santa_Catarina.html" target="_blank">Hotel Ibis Styles Balneário Camboriú</a></h3>
+                    <p>Design moderno e preço acessível, perfeito para estadias práticas.</p>
+                </li>
+                <li>
+                    <h3><a href="https://www.tripadvisor.com.br/Hotel_Review-g680306-d14216134-Reviews-Santa_Inn_Hotel-Balneario_Camboriu_State_of_Santa_Catarina.html" target="_blank">Santa Inn Hotel</a></h3>
+                    <p>Hotel aconchegante com atendimento impecável e localização estratégica.</p>
+                </li>
+                <li>
+                    <h3><a href="https://www.tripadvisor.com.br/Hotel_Review-g680306-d846853-Reviews-Hamburgo_Palace_Hotel-Balneario_Camboriu_State_of_Santa_Catarina.html" target="_blank">Hamburgo Palace Hotel</a></h3>
+                    <p>Conforto e sofisticação no coração de Balneário Camboriú.</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Turismo Balneário Camboriú. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

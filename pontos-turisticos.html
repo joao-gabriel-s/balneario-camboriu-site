@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pontos Turísticos - Balneário Camboriú</title>
+    <style>
+        /* Reset de margens e paddings */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #005f73;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            font-size: 16px;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        nav ul li a.active,
+        nav ul li a:hover {
+            background-color: #023e4a;
+            border-radius: 5px;
+        }
+
+        header .banner {
+            width: 100%;
+            height: 300px;
+            background: url('banner.jpg') center/cover no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        header .banner h1 {
+            font-size: 48px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        header .banner p {
+            font-size: 18px;
+            margin-top: 10px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .tourist-spot {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin-bottom: 30px;
+            padding: 15px;
+        }
+
+        .tourist-spot img,
+        iframe {
+            width: 100%;
+            height: 350px;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+
+        .tourist-spot h3 {
+            margin: 0 0 10px 0;
+            color: #005f73;
+        }
+
+        .tourist-spot p {
+            margin: 0 0 15px 0;
+            font-size: 14px;
+            color: #555;
+        }
+
+        footer {
+            background-color: #005f73;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pontos-turisticos.html" class="active">Pontos Turísticos</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="hoteis.html">Hotéis</a></li>
+                <li><a href="gastronomia.html">Gastronomia</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+        <section class="banner">
+            <div>
+                <h1>Pontos Turísticos</h1>
+                <p>Explore as atrações mais famosas de Balneário Camboriú</p>
+            </div>
+        </section>
+    </header>
+    <main>
+        <!-- Praia Central -->
+        <section class="tourist-spot">
+            <h3>Praia Central</h3>
+            <p>A principal praia de Balneário Camboriú, ideal para banhos de sol e esportes aquáticos.</p>
+            <img src="praia-central.png" alt="Praia Central">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10350.383362664925!2d-48.63321497937803!3d-26.991056736301196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8b611bf0d8f5b%3A0x43a641815c25331d!2sPraia%20Central!5e0!3m2!1spt-BR!2sbr!4v1732742598803!5m2!1spt-BR!2sbr" loading="lazy"></iframe>
+        </section>
+
+        <!-- Parque Unipraias -->
+        <section class="tourist-spot">
+            <h3>Parque Unipraias</h3>
+            <p>Um complexo turístico com bondinhos, trilhas e vistas deslumbrantes.</p>
+            <img src="parque-unipraias.jpg" alt="Parque Unipraias">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3554.7970512117254!2d-48.60808380321047!3d-27.004968999999992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8b60ff8ba8253%3A0x82851a2d4f203fdc!2sParque%20Unipraias!5e0!3m2!1spt-BR!2sbr!4v1732742615553!5m2!1spt-BR!2sbr" loading="lazy"></iframe>
+        </section>
+
+        <!-- Cristo Luz -->
+        <section class="tourist-spot">
+            <h3>Cristo Luz</h3>
+            <p>Um monumento icônico que ilumina a cidade à noite.</p>
+            <img src="cristo-luz.jpg" alt="Cristo Luz">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1777.7152951274632!2d-48.644018661076224!3d-26.984925603963667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8ca07ad5bc04b%3A0xcf7e5064248a955!2sCristo%20Luz!5e0!3m2!1spt-BR!2sbr!4v1732742628797!5m2!1spt-BR!2sbr" loading="lazy"></iframe>
+        </section>
+
+        <!-- Morro do Careca -->
+        <section class="tourist-spot">
+            <h3>Morro do Careca</h3>
+            <p>Ideal para trilhas e voos de parapente, com vistas espetaculares.</p>
+            <img src="morro-careca.png" alt="Morro do Careca">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8457.94023996789!2d-48.62860136426974!3d-26.96291248859905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8c92b73a95dc1%3A0xf5157077e6760c65!2sComplexo%20Tur%C3%ADstico%20do%20Morro%20do%20Careca!5e0!3m2!1spt-BR!2sbr!4v1732742562642!5m2!1spt-BR!2sbr" loading="lazy"></iframe>
+        </section>
+
+        <!-- Roda Gigante -->
+        <section class="tourist-spot">
+            <h3>Roda Gigante</h3>
+            <p>Estrada da Rainha, um dos ícones turísticos da cidade.</p>
+            <img src="roda-gigante.jpg" alt="Roda Gigante">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6712.470445937832!2d-48.630675936717715!3d-26.973010155137658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8c9bdef4bf4fb%3A0x90e2968d21124c07!2sRoda%20Gigante%20de%20Balne%C3%A1rio%20Cambori%C3%BA!5e0!3m2!1spt-BR!2sbr!4v1732742649943!5m2!1spt-BR!2sbr" loading="lazy"></iframe>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Turismo Balneário Camboriú. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
